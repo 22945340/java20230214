@@ -1,0 +1,19 @@
+package ch06.exercise.example15;
+
+public class MemberServiceExample {
+	public static void main(String[] args) {
+		
+		MemberService memberService = new MemberService();
+		
+		boolean result1 = memberService.login("hong", "1234");
+		
+		if(result1) {
+			System.out.println("로그인 되었습니다");
+			memberService.logout("hong");
+		} else {
+			System.out.println("id 또는 password가 올바르지 않습니다.");
+		}
+	} 
+	
+
+}
